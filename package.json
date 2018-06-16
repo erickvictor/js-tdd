@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd",
+  "version": "1.0.0",
+  "description": "This is library JS with TDD in a Pratic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickvictor/js-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Erick Bernardo <erickvictor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erickvictor/js-tdd/issues"
+  },
+  "homepage": "https://github.com/erickvictor/js-tdd#readme"
+}
