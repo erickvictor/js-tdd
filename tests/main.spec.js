@@ -1,36 +1,34 @@
 /* eslint-disable */
 
 var expect = require('chai').expect;
+var calc = require('../src/main.js');
 
-describe('Main', function() {
+describe('Calc', function() {
 
-  // roda todas as vezes, antes de CADA bloco
-  beforeEach(function() {
-    arr = [1, 2, 3];
-  });
+  //smoke tests
+  describe('Smoke tests', function() {
+    it('should exists the calc lib', function() {
+      expect(calc).to.exist;
+    });
 
-  // testar tipos ou se existe (smoke test)
-  it('should be an array', function() {
-    expect(arr).to.be.an('array');
-  });
+    it('should exist the method `sum`', function() {
+      expect(calc.sum).to.exist;
+      expect(calc.sum).to.be.a('function');
+    });
 
+    it('should exist the method `sub`', function() {
+      expect(calc.sub).to.exist;
+      expect(calc.sub).to.be.a('function');
+    });
 
-  it('should have a size of 4 when push another value to the array', function() {
-    arr.push(4);
-    expect(arr).to.have.lengthOf(4);
-  });
+    it('should exist the method `mult`', function() {
+      expect(calc.mult).to.exist;
+      expect(calc.mult).to.be.a('function');
+    });
 
-  it('should remove the value 3 when use pop in the array', function() {
-    arr.pop(); // true
-    expect(arr).to.not.include(3);
-  });
-
-  it('should return true when pop 3 from the array', function() {
-    expect(arr.pop() === 3).to.be.true;
-  });
-
-  it('should have a size of 2 when pop a value from the array', function() {
-    arr.pop();
-    expect(arr).to.have.lengthOf(2);
+    it('should exist the method `div`', function() {
+      expect(calc.div).to.exist;
+      expect(calc.div).to.be.a('function');
+    });
   });
 });
